@@ -9,9 +9,9 @@ import com.example.compmicroservice.Entity.Customer;
 
 public interface Customer_Repo extends JpaRepository<Customer, String>  {
 
-	@Query("select cust.customername from Customer cust where cutomername=:customername")
+	@Query("select cust.customername from Customer cust where customername=:customername")
 	public String getCustomerByCustomerName(@Param("customername") String customername);
 	
-	@Query("select cust.customername from Customer cust where customeremail=:customeremail")
+	@Query("select cust.customeremail from Customer cust where customeremail=:customeremail")
 	public String getCustomerByCustomerEmail(@Param("customeremail") String customeremail);
 }

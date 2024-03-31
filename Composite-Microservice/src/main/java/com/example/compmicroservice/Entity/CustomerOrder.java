@@ -44,6 +44,11 @@ public class CustomerOrder {
 	public String toString() {
 		return "CustomerOrder [id=" + id + ", orderId=" + orderId + ", customerId=" + customerId + "]";
 	}
+	public CustomerOrder(Integer orderId, Integer customerId) {
+		super();
+		this.orderId = orderId;
+		this.customerId = customerId;
+	}
 	
 	
 }

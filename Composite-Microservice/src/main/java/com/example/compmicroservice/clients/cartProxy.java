@@ -25,6 +25,9 @@ public interface cartProxy {
 	@GetMapping("/api/carts/{cartid}")
 	public cart getCart(@PathVariable int cartid);
 	
+	@GetMapping("/api/message")
+	public String getMessage();
+	
 }
 
 @Component
@@ -46,6 +49,12 @@ class CartServiceFallBack implements cartProxy{
 	public cart getCart(int cartid) {
 		// TODO Auto-generated method stub
 		return new cart();
+	}
+
+	@Override
+	public String getMessage() {
+		// TODO Auto-generated method stub
+		return "fallback method";
 	}
 	
 }
