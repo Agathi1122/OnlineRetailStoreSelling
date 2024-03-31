@@ -45,6 +45,12 @@ public class Inventory {
 	public Inventory(HttpStatus internalServerError) {
 		// TODO Auto-generated constructor stub
 	}
+	
+	public Inventory(int productId, int quantity) {
+		super();
+		this.productId = productId;
+		this.quantity = quantity;
+	}
 	@Override
 	public String toString() {
 		return "Inventory [inventoryid=" + inventoryid + ", productId=" + productId + ", quantity=" + quantity + "]";

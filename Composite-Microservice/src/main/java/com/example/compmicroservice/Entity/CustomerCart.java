@@ -41,6 +41,12 @@ public class CustomerCart {
 	public CustomerCart() {
 		super();
 	}
+	
+	public CustomerCart(Integer cartId, Integer customerId) {
+		super();
+		this.cartId = cartId;
+		this.customerId = customerId;
+	}
 	@Override
 	public String toString() {
 		return "CustomerCart [id=" + id + ", cartId=" + cartId + ", customerId=" + customerId + "]";

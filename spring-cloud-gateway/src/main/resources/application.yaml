@@ -32,3 +32,7 @@ spring:
           uri: http://localhost:5000
           predicates:
             - Path=/api/carts/**
+        - id: composite-ms
+          uri: http://localhost:10000
+          predicates:
+            - Path=/api/shoppingservice/**
